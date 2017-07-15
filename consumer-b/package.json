@@ -1,0 +1,22 @@
+{
+  "name": "consumer-b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Giamir Buoncristiani",
+  "license": "MIT",
+  "scripts": {
+    "test:pact": "jest --testPathPattern=\"(services).+\\.js$\" --env=node",
+    "test:pact:publish": "babel-node publish-pacts.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "jest": "^20.0.4",
+    "pact": "^2.6.0"
+  },
+  "dependencies": {
+    "fetch-everywhere": "^1.0.5"
+  }
+}
